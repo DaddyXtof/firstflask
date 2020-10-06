@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+        {% if login %}
+            <h3>Let's get started</h3>
+        {% else %}
+            <h3>Please <a href="{{url_for('login')}}">login</a></h3>
+        {% endif %}
+{% endblock %}
